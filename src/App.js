@@ -4,8 +4,8 @@ import Header from './Header';
 import MasterForm from './Form/MasterForm.jsx';
 import Cart from './Summary/Cart.jsx';
 import './App.css';
-
-
+import {FEATURES} from './Store.js';
+;
 class App extends Component {
   state = {
     selected: {
