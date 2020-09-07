@@ -4,7 +4,7 @@ import Header from './Header';
 import MasterForm from './Form/MasterForm.jsx';
 import Cart from './Summary/Cart.jsx';
 import './App.css';
-import Features from './index';
+
 
 class App extends Component {
   state = {
@@ -47,7 +47,7 @@ class App extends Component {
          <Header />
         <main className="wrapper">
         <MasterForm 
-        features={Features} 
+        features={this.props.Features} 
         format={this.USCurrencyFormat.format} 
         selected={this.state.selected} 
         updateFeature={this.updateFeature} 
